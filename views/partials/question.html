@@ -1,0 +1,9 @@
+<div class="main">
+  <img src="images/3af4ea18.icon_685.svg" class="wobble logo">
+  
+  <h1 class="mainquestion" data-ng-bind-html="questiontext"></h1>
+  <textarea placeholder="I would..." data-ng-model="answer.text" class="answer" maxlength="140" on-key-down=""></textarea>
+  <div class="wordcount" data-ng-bind="charactercount"></div>
+  <button role="button" data-ng-class="{'disabled': !cansend}" data-ng-click="send()">Send Answer<i class="large-icon icon-arrow-right"></i></button>
+  <div class="help">Send your answer to see everyone else's. You must use the 2 <span class="keyword">keywords</span> in your answer. Solving this kind of problem every day will gradually train your brain to think more creatively!</div>
+</div>
