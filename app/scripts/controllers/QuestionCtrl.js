@@ -23,16 +23,6 @@ angular.module('brainJellyApp').controller('QuestionCtrl', function ($scope, $ht
     $scope.noun1display = $scope.noun1;
     $scope.noun2display = $scope.noun2;
 
-    if($scope.noun1.indexOf('a') == 0 || $scope.noun1.indexOf('e') == 0 || $scope.noun1.indexOf('i') == 0 || $scope.noun1.indexOf('o') == 0 || $scope.noun1.indexOf('u') == 0)
-      $scope.noun1display = 'an ' + $scope.noun1display;
-    else
-      $scope.noun1display = 'a ' + $scope.noun1display;
-
-    if($scope.noun2.indexOf('a') == 0 || $scope.noun2.indexOf('e') == 0 || $scope.noun2.indexOf('i') == 0 || $scope.noun2.indexOf('o') == 0 || $scope.noun2.indexOf('u') == 0)
-      $scope.noun2display = 'an ' + $scope.noun2display;
-    else
-      $scope.noun2display = 'a ' + $scope.noun2display;
-
     $scope.noun1display = '<span class="keyword">'+$scope.noun1display+'</span>';
     $scope.noun2display = '<span class="keyword">'+$scope.noun2display+'</span>';
 
